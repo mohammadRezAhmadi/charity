@@ -1,0 +1,21 @@
+{
+  "name": "hardhattest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Ernpm installror: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.13.0",
+    "solhint": "^3.4.1"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3"
+  }
+}
