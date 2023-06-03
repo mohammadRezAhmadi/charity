@@ -91,6 +91,11 @@
             // address payable person = needy[x].person;
             // person.transfer(needy[x].liquidyShare);
             require(needy[_id].person == msg.sender , "caller not needy");
-            payable(msg.sender).transfer(needy[_id].liquidyShare);
+            if(needy[_id].vote == 0){
+                revert();
+            }
+            else{
+                payable(msg.sender).transfer(needy[_id].liquidyShare);
+            }
         }
     }
